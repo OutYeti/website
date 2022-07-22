@@ -3,6 +3,7 @@ import { getAllPosts } from "../lib/api";
 import Head from "next/head";
 import Post from "../interfaces/post";
 import Link from "next/link";
+import PostPreview from "../components/PostPreview";
 
 type Props = {
   allPosts: Post[];
@@ -17,12 +18,7 @@ export default function Index({ allPosts }: Props) {
         </Head>
         <div>
           {allPosts.map((post) => (
-            <Link href={`/posts/${post.slug}`}>
-              <div>
-                <h1>{post.title}</h1>
-                <p>{post.excerpt}</p>
-              </div>
-            </Link>
+            <PostPreview post={post} />
           ))}
         </div>
       </Layout>
