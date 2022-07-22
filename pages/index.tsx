@@ -16,7 +16,7 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <title>Jamie Hughes | Portfolio</title>
         </Head>
-        <div>
+        <div className="mx-4 lg:mx-auto gap-10 max-w-xl my-20">
           {allPosts.map((post) => (
             <PostPreview post={post} />
           ))}
