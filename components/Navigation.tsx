@@ -3,7 +3,7 @@ import React from "react";
 
 const Navigation: React.FC = () => {
   return (
-    <div className="flex flex-col items-center my-4 mx-4 lg:mx-20 cursor-pointer">
+    <div className="flex flex-col items-center my-10 mx-4 lg:mx-20 cursor-pointer">
       <Link href="/">
         <div className="flex flex-col items-center">
           <img

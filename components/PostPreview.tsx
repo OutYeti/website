@@ -18,7 +18,7 @@ const PostPreview: React.FC<Props> = ({ post }) => {
           <h1 className="text-3xl mb-2 font-semibold text-slate-200">
             {post.title}
           </h1>
-          <p className="text-slate-300">{post.excerpt}</p>
+          <p className="text-slate-400">{post.excerpt}</p>
         </div>
       </Link>
     </div>
